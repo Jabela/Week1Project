@@ -1,0 +1,241 @@
+/* Keeps set width of blocks + pushes padding/borders inside the block */
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 {
+	font-family: Times, serif;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 70px;
+	color: white;
+	text-align: center;
+	padding-top: 120px;
+	text-shadow: 2px 2px 15px #151515;
+	margin: 0 0 20px 0;
+}
+
+h2 {
+    font-family: Times, serif;
+    font-size: 40px;
+    color: #2DC3E9;
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+h3 {
+	font-family: Times, serif;
+	color: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: rgba(0,0,0,0.5);
+	margin: 0;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 80px;
+}
+
+/* Header Section */
+
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/macbook.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 10%;
+	padding-bottom: 18%;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.header p {
+	font-family: Times, serif;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	color: #2DC3E9;
+	text-shadow: 1px 1px 5px #151515;
+}
+
+
+
+/* Navigation Section */
+
+.nav {
+	background: black;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	box-shadow: 1px 1px 20px #363636;
+}
+
+.nav ul {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-left: 0;
+}
+
+.nav a {
+	text-decoration: none;
+	color: grey;
+	/*text-shadow: 0px 0px 3px black;*/
+}
+
+.nav a:hover {
+/* 	border-bottom: 3px solid #2DC3E9;
+ 	padding-bottom: 7px;*/
+	/*text-shadow: 0px 0px 3px black;*/
+ 	color: #C2C2C2;
+ }
+
+.nav li {
+	list-style: none;
+	display: inline-block;
+	padding: 15px 20px;
+}
+
+
+
+/* About Section */
+
+.about {
+	background: #EDEDED;
+}
+
+.description {
+	float: left;
+	width: 60%;
+}
+
+.photo {
+	border-radius: 50%;
+	float: right;
+	width: 30%;
+	margin-left: 10%;
+	padding-top: 10px;
+}
+
+
+
+/* Skills Section */
+
+.skills {
+	clear: both;
+	background: #2DC3E9;
+	padding: 1px;
+}
+
+.skills h2 {
+	color: white;
+}
+
+.skills ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+.skills li {
+	display: inline;
+	float: left;
+	width: 33.33%;
+}
+
+
+
+/* Projects Section */
+
+.portfolio {
+	padding-bottom: 30px;
+	clear: both;
+	background: url("images/p6.png");
+}
+
+.portfolio ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.portfolio li {
+	float: left;
+	display: inline;
+	text-align: center;
+}
+
+.projects {
+	padding: 0 10px;
+}
+
+
+
+/* Contact Section */
+
+.contact {
+	background: #252525;
+	clear: both;
+}
+
+.social {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.social li {
+	display: inline;
+	padding: 0 15px;
+}
+
+i {
+	font-size: 40px;
+	color: grey;
+}
+
+a i:hover {
+	color: #C2C2C2;
+}
+
+
+
+/* Footer */
+
+.footer {
+	background: #252525;
+}
+
+.footer p {
+	color: grey;
+	text-align: center;
+	padding-bottom: 40px;
+}
